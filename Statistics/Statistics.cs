@@ -15,7 +15,7 @@ namespace Statistics
             
            Metrics stats = new Metrics();
             
-            if(numbers.Count==0_
+            if(numbers.Count==0)
                {
                    stats.average = float.NaN;
                    stats.max = float.NaN;
