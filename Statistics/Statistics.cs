@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,6 +9,8 @@ namespace Statistics
         public float average;
         public float max;
         public float min;
+        
+   
     }
     public class StatsComputer
     {
