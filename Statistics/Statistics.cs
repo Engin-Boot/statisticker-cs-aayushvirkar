@@ -11,7 +11,7 @@ namespace Statistics
     }
     public class StatsComputer
     {
-        public Stats CalculateStatistics(List<float> numbers) {
+        public Metrics CalculateStatistics(List<float> numbers) {
             
            Metrics stats = new Metrics();
             
