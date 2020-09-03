@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Statistics
 {
-    public class Metrics
+    public class Stats
     {
         public float average;
         public float max;
@@ -11,9 +11,9 @@ namespace Statistics
     }
     public class StatsComputer
     {
-        public Metrics CalculateStatistics(List<float> numbers) {
+        public Stats CalculateStatistics(List<float> numbers) {
             
-           Metrics stats = new Metrics();
+           Stats stats = new Metrics();
             
             if(numbers.Count==0)
                {
