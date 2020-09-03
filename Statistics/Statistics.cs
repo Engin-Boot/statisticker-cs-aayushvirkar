@@ -13,7 +13,7 @@ namespace Statistics
     {
         public Stats CalculateStatistics(List<float> numbers) {
             
-           Stats stats = new Metrics();
+           Stats stats = new Stats();
             
             if(numbers.Count==0)
                {
