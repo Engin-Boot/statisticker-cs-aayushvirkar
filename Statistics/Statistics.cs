@@ -11,7 +11,7 @@ namespace Statistics
         public float max;
         public float min;
        
-        Public Metrics()
+        public Metrics()
         {
             this.average = float.NaN;
             this.max = float.NaN;
