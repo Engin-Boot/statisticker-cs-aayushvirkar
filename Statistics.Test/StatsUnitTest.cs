@@ -23,9 +23,9 @@ namespace Statistics.Test
             var statsComputer = new StatsComputer();
             var computedStats = statsComputer.CalculateStatistics(
                 new List<float>{});
-            Assert.True(Math.abs(statsComputer.average.Equals(float.NaN));
-            Assert.True(Math.abs(statsComputer.min.Equals(float.NaN));
-            Assert.True(Math.abs(statsComputer.max.Equals(float.NaN));
+            Assert.True(Math.abs(statsComputer.average.Equals(float.NaN)));
+            Assert.True(Math.abs(statsComputer.min.Equals(float.NaN)));
+            Assert.True(Math.abs(statsComputer.max.Equals(float.NaN)));
                        
         }
     }
