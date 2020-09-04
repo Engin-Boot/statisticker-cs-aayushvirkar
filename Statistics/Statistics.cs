@@ -10,6 +10,12 @@ namespace Statistics
         public float max;
         public float min;
        
+        Public Metrics()
+        {
+            this.average = float.NaN;
+            this.max = float.NaN;
+            this.min = float.NaN;
+        }
     }
     public class StatsComputer
     {  
@@ -18,13 +24,7 @@ namespace Statistics
             //Implement statistics here
             Metrics stat = new Metrics();
             
-            if(numbers.Count==0)
-            {
-                stat.average = float.NaN;
-                stat.min = float.NaN;
-                stat.max = float.NaN;
-            }
-            else
+           if(numbers.Count!=0)
             {
                 stat.average = numbers.Average();
                 stat.min = numbers.Min();
