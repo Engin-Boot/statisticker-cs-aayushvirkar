@@ -32,6 +32,7 @@ namespace Statistics
                 stat.max = numbers.Max();
             }
            
+            
             return stat;
         }  
     }  
