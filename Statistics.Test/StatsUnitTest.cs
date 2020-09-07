@@ -29,5 +29,16 @@ namespace Statistics.Test
             Assert.True(computedStats.max.Equals(float.NaN));
                        
         }
+        [Fact]
+        
+        public void whenListContainsNaNthenReportStatsForRestofTheElements()
+        {
+            var statsComputer = new StatsComputer();
+            var computedStats = statsComputer.CalculateStatistics(
+                new List<float>{1.5f,8.9f,float.NaN,4.5f});
+             Assert.True(Math.Abs(computedStats.average - 4.9666) <= epsilon);
+             Assert.True(Math.Abs(computedStats.max - 8.9) <= epsilon);
+             Assert.True(Math.Abs(computedStats.min - 1.5) <= epsilon);
+        }
     }
 }
