@@ -25,6 +25,11 @@ namespace Statistics
             //Implement statistics here
             Metrics stat = new Metrics();
             
+            if(numbers.Contains(float.NaN))
+            {
+                numbers.RemoveAll(float.NaN);
+            }
+            
            if(numbers.Count!=0)
             {
                 stat.average = numbers.Average();
