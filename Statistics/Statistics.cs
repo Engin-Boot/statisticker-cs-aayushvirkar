@@ -27,7 +27,7 @@ namespace Statistics
             
             if(numbers.Contains(float.NaN))
             {
-                numbers.RemoveAll(float.NaN);
+                numbers.RemoveAll(float.IsNaN);
             }
             
            if(numbers.Count!=0)
