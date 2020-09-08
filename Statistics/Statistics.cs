@@ -10,7 +10,7 @@ namespace Statistics
         public float average;
         public float max;
         public float min;
-       
+        public int adasd;
         public Metrics()
         {
             this.average = float.NaN;
